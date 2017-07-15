@@ -4,7 +4,10 @@ const router = express.Router();
 
 
 router.get('/', function(req, res){
-  res.render('index', {title: "Working!"})
+  res.render('index', {
+    title: "Flip Cards",
+    user: req.session.user
+  })
 })
 
 module.exports = router;

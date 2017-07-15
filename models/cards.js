@@ -2,8 +2,11 @@ const mongoose = require("mongoose")
 
 
 const cardSchema = new mongoose.Schema({
-  question: {type: String, required: true},
-  answer: {type: String, required: true},
+  title: {type: String, required: true},
+  test: [{
+    question: {type: String, required: true},
+    answer: {type: String, required: true}
+  }]
 })
 
 const Card = mongoose.model('Card', cardSchema)

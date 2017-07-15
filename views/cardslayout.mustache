@@ -1,0 +1,23 @@
+<div class="sub-header">
+  <h2>This is your {{deck.title}} deck</h2>
+  <a href="/{{deck._id}}/test">
+    <button type="button" name="button">Start Test!</button>
+  </a>
+</div>
+
+{{#deck.test}}
+<div class="cardLayout-wrapper">
+  <div class="card">
+    <div class="question">
+      <strong>Question: </strong> {{question}}
+    </div>
+    <hr>
+    <div class="answer">
+      <strong>Answer: </strong> {{answer}}
+    </div>
+  </div>
+</div>
+{{/deck.test}}
+<div class="end">
+  end
+</div>
