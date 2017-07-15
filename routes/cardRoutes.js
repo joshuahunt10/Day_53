@@ -70,12 +70,6 @@ router.get('/:deckID/test', function(req, res){
     })
   })
 })
-//
-// router.post('/something?', function(req, res){
-//   Card.findOne({'_id': somehow})
-//   .then(function(deck){
-//
-//   }
-// })
+
 
 module.exports = router;

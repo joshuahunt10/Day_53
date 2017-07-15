@@ -5,8 +5,10 @@ console.log('hello world!');
 var html = `<strong>Answer: </strong> {{answer}}`
 
 const checkButt = document.querySelector(".checkAnswer")
-
-  checkButt.addEventListner("submit", function(){
+if(checkButt){
+  checkButt.addEventListener("click", function(){
     console.log('the button was clicked');
     document.querySelector('.actualAnswer').insertAdjacentHTML('beforeend', html)
   })
+
+}
